@@ -34,5 +34,7 @@ RUN ln -s /usr/bin/python3 /usr/local/bin/python && \
     && \
     rm -rf /root/.cache
 
+RUN pip install --no-cache-dir git+https://github.com/haowen-xu/ml-essentials.git
+
 COPY entry.sh /
 ENTRYPOINT ["/entry.sh"]
