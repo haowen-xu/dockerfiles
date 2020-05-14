@@ -13,7 +13,8 @@ RUN chsh -s /bin/bash && \
     bash -c 'DEBIAN_FRONTEND=noninteractive apt-mark hold cuda* libcudnn* || echo "no gpu"' && \
     DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        locales language-pack-en tzdata ca-certificates tar wget curl git vim \
+        locales language-pack-en tzdata ca-certificates \
+        tar wget curl git vim openssh \
         build-essential python3 python3-dev openmpi-bin libopenmpi-dev \
     && \
     apt-get clean && \
