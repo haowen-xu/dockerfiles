@@ -14,7 +14,7 @@ RUN chsh -s /bin/bash && \
     DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         locales language-pack-en tzdata ca-certificates \
-        tar wget curl git vim openssh \
+        tar wget curl git vim openssh-client \
         build-essential python3 python3-dev openmpi-bin libopenmpi-dev \
     && \
     apt-get clean && \
