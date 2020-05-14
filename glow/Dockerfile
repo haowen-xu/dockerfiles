@@ -1,4 +1,5 @@
-FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu18.04
+# FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
+FROM haowenxu/cuda:9.0-cudnn7-devel-ubuntu18.04
 
 ARG PIP_DEFAULT_TIMEOUT=120
 ARG PIP_MIRROR=
